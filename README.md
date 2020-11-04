@@ -28,7 +28,7 @@ Check it by
 $ curl http://localhost:8080
 ```
 
-*The folder DockerCompose conatains two different docker file *one* and *two\* which can be composed using an yml file.
+The folder DockerCompose conatains two different docker file _one_ and _two_ which can be composed using an yml file.
 
 _Also if in case you want to run a application on your AWS Instance you can do it by creating a GUI._
 
