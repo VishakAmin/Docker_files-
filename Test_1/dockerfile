@@ -1,0 +1,12 @@
+FROM ubuntu:20.04
+RUN apt update
+RUN apt -y upgrade
+RUN apt -y install python3 python3-pip
+RUN apt install -y libssl-dev
+
+RUN pip3 --no-cache-dir install \
+    pyopenssl \
+    ndg-httpsclient \
+    pyasn1
+WORKDIR "/root"
+CMD ["/bin/bash"]

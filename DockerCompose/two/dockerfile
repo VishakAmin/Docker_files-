@@ -1,0 +1,15 @@
+FROM ubuntu:20.04
+ENV DEBIAN_FRONTEND=noninteractive
+
+
+RUN apt update
+RUN apt -y upgrade
+RUN apt-get install -y python3-pip
+RUN pip3 --no-cache-dir install \
+    pyopenssl \
+    ndg-httpsclient \
+    pyasn1
+RUN apt install -y default-jdk
+
+WORKDIR "/root"
+CMD ["/bin/bash"]
